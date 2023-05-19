@@ -5,7 +5,8 @@ metadata: # kpt-merge: /regional-endpoints
   annotations:
     kpt.dev/config-injection: "required"
     internal.kpt.dev/upstream-identifier: '|ConfigMap|default|regional-endpoints'
+    kpt.dev/injected-resource: us-east2-endpoints
   namespace: default
 data:
-  db: db.platform.svc
-  auth: auth.platform.svc
+  auth: corp-auth.us-east2.example.com
+  db: test-app-db.us-east2.example.net
